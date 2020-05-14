@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset do CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-size: auto 100vh;
+}
+
+/* Se a tela tiver pelo menos 400px, vai carregar estes estilos*/
+@media (min-width: 400px) {
+	body {
+		font-size:14px;
+	}
+	.logo-pc {
+		height: 5em;
+		width: auto;
+	}
+	.site-subtitle {
+		font-size: 15px;
+	}
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+	body {
+		font-size:18px;
+	}
+	.logo-pc {
+		height: 7em;
+		width: auto;
+	}
+	.site-subtitle {
+		font-size: 23px;
+	}
+}
+
+header {
+	display:flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	color:rgba(110,110,110,1.00);
+	text-decoration: none;
+}
+
+a:hover {
+	color:rgba(110,193,177,1.00);
+	font-weight: 700;
+}
+
+.menu {
+	background-color:whitesmoke;
+	position: fixed;
+	top:0;
+	width: 100vw;
+}
+
+.menu a{
+	display:block;
+	padding:10px 20px;
+}
+
+.menu ul{
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: space-around;
+}
+
+.menu li{
+	list-style: none;
+}
+
+.site-subtitle{
+	color:rgba(190,190,190,1.00);
+	font-family: 'DM Mono', monospace;
+	line-height: 2em;
+	text-align: center;
+}
+
+.logo {
+	text-align: center;
+}
+
+.img-portfolio{
+	height: 200px;
+	width: 270px;
+	object-fit: cover;
+	object-position:left bottom;
+	border-radius: 5%;
+}
+
+@media (min-width: 1200px){
+	.img-portfolio {
+		height: auto;
+		width: 100%;
+	}
+	.about {
+	display:flex;
+	height: 30vh;
+	justify-content: center;
+	align-items: center;
+	padding: 9em;
+	}
+}
+
+.grid {
+	display: grid;
+	gap: 3em;
+}
+
+@media (min-width: 700px) {
+	.grid { 
+		grid-template-columns: 270px 270px;
+		justify-content: center;
+		margin-top: 1em;
+	}
+}
+
+@media (min-width: 880px) {
+	.grid { 
+		grid-template-columns: repeat(3,270px);
+		justify-content: center;
+	}
+}
+
+.portfolio figure {
+	text-align: center;
+}
+
+figcaption {
+	color:rgba(110,110,110,1.00);
+	font-family: 'DM Mono', monospace;
+	line-height: 2em;
+	text-align: center;
+}
+
+.portfolio h2 {
+	color:rgba(110,110,110,1.00);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	padding: 1em;
+}
+
+.sobre h2 {
+	color:rgba(110,110,110,1.00);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	padding: 1em;
+}
+
+.sobre p {
+	color:rgba(31,109,146,1.00);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	padding: 4em;
+}
+
+.img-sobre {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	object-position:top;
+	border-radius: 50%;
+}
+
+.about {
+	text-align: center;
+}
